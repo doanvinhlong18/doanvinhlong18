@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title desc">
+  <title id="title">Intelligence category</title>
+  <desc id="desc">Original engineering category pictogram.</desc>
+  <defs></defs>
+  <g font-family="Segoe UI, Arial, sans-serif"><rect x="0.5" y="0.5" width="47" height="47" rx="12" fill="#111827" stroke="#384367"/><g fill="none" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m24 8 14 8v16l-14 8-14-8V16Zm0 0v32M10 16l28 16m0-16L10 32"/><circle cx="24" cy="24" r="4" fill="#111827"/></g></g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title desc">
+  <title id="title">Data category</title>
+  <desc id="desc">Original engineering category pictogram.</desc>
+  <defs></defs>
+  <g font-family="Segoe UI, Arial, sans-serif"><rect x="0.5" y="0.5" width="47" height="47" rx="12" fill="#111827" stroke="#384367"/><g fill="none" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="14" rx="12" ry="5"/><path d="M12 14v19a12 5 0 0 0 24 0V14M12 23a12 5 0 0 0 24 0"/></g></g>
+</svg>

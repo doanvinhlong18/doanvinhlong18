@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="330" viewBox="0 0 640 330" role="img" aria-labelledby="title desc">
+<title id="title">Public GitHub activity — dated snapshot</title>
+<desc id="desc">13 weeks of contribution intensity through 2026-11-18, fetched 2026-11-18T21:03:37Z. Source: GitHub. Not a measure of engineering skill.</desc>
+<rect x="0.5" y="0.5" width="639" height="329" rx="18" fill="#080B14" stroke="#29314B"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="32" y="37" fill="#A78BFA" font-size="11" font-weight="600" letter-spacing="2">PUBLIC CONTRIBUTION RHYTHM</text>
+<text x="32" y="140" fill="#A7B3C8" font-size="10">MON</text>
+<text x="32" y="184" fill="#A7B3C8" font-size="10">WED</text>
+<text x="32" y="228" fill="#A7B3C8" font-size="10">FRI</text>
+<text x="86" y="90" fill="#A7B3C8" font-size="11">AUG</text>
+<rect x="86" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-08-23: intensity 0/4</title></rect>
+<rect x="86" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-08-24: intensity 0/4</title></rect>
+<rect x="86" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-08-25: intensity 0/4</title></rect>
+<rect x="86" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-08-26: intensity 0/4</title></rect>
+<rect x="86" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-08-27: intensity 0/4</title></rect>
+<rect x="86" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-08-28: intensity 0/4</title></rect>
+<rect x="86" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-08-29: intensity 0/4</title></rect>
+<rect x="125" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-08-30: intensity 0/4</title></rect>
+<rect x="125" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-08-31: intensity 0/4</title></rect>
+<rect x="125" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-09-01: intensity 0/4</title></rect>
+<rect x="125" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-09-02: intensity 0/4</title></rect>
+<rect x="125" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-09-03: intensity 0/4</title></rect>
+<rect x="125" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-09-04: intensity 0/4</title></rect>
+<rect x="125" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-09-05: intensity 0/4</title></rect>
+<text x="164" y="90" fill="#A7B3C8" font-size="11">SEP</text>
+<rect x="164" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-09-06: intensity 0/4</title></rect>
+<rect x="164" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-09-07: intensity 0/4</title></rect>
+<rect x="164" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-09-08: intensity 0/4</title></rect>
+<rect x="164" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-09-09: intensity 0/4</title></rect>
+<rect x="164" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-09-10: intensity 0/4</title></rect>
+<rect x="164" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-09-11: intensity 0/4</title></rect>
+<rect x="164" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-09-12: intensity 0/4</title></rect>
+<rect x="203" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-09-13: intensity 0/4</title></rect>
+<rect x="203" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-09-14: intensity 0/4</title></rect>
+<rect x="203" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-09-15: intensity 0/4</title></rect>
+<rect x="203" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-09-16: intensity 0/4</title></rect>
+<rect x="203" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-09-17: intensity 0/4</title></rect>
+<rect x="203" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-09-18: intensity 0/4</title></rect>
+<rect x="203" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-09-19: intensity 0/4</title></rect>
+<rect x="242" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-09-20: intensity 0/4</title></rect>
+<rect x="242" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-09-21: intensity 0/4</title></rect>
+<rect x="242" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-09-22: intensity 0/4</title></rect>
+<rect x="242" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-09-23: intensity 0/4</title></rect>
+<rect x="242" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-09-24: intensity 0/4</title></rect>
+<rect x="242" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-09-25: intensity 0/4</title></rect>
+<rect x="242" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-09-26: intensity 0/4</title></rect>
+<rect x="281" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-09-27: intensity 0/4</title></rect>
+<rect x="281" y="126" width="28" height="16" rx="3" fill="#343B78"><title>2026-09-28: intensity 1/4</title></rect>
+<rect x="281" y="148" width="28" height="16" rx="3" fill="#343B78"><title>2026-09-29: intensity 1/4</title></rect>
+<rect x="281" y="170" width="28" height="16" rx="3" fill="#343B78"><title>2026-09-30: intensity 1/4</title></rect>
+<rect x="281" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-10-01: intensity 0/4</title></rect>
+<rect x="281" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-10-02: intensity 0/4</title></rect>
+<rect x="281" y="236" width="28" height="16" rx="3" fill="#343B78"><title>2026-10-03: intensity 1/4</title></rect>
+<text x="320" y="90" fill="#A7B3C8" font-size="11">OCT</text>
+<rect x="320" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-10-04: intensity 0/4</title></rect>
+<rect x="320" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-10-05: intensity 0/4</title></rect>
+<rect x="320" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-10-06: intensity 0/4</title></rect>
+<rect x="320" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-10-07: intensity 0/4</title></rect>
+<rect x="320" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-10-08: intensity 0/4</title></rect>
+<rect x="320" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-10-09: intensity 0/4</title></rect>
+<rect x="320" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-10-10: intensity 0/4</title></rect>
+<rect x="359" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-10-11: intensity 0/4</title></rect>
+<rect x="359" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-10-12: intensity 0/4</title></rect>
+<rect x="359" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-10-13: intensity 0/4</title></rect>
+<rect x="359" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-10-14: intensity 0/4</title></rect>
+<rect x="359" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-10-15: intensity 0/4</title></rect>
+<rect x="359" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-10-16: intensity 0/4</title></rect>
+<rect x="359" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-10-17: intensity 0/4</title></rect>
+<rect x="398" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-10-18: intensity 0/4</title></rect>
+<rect x="398" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-10-19: intensity 0/4</title></rect>
+<rect x="398" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-10-20: intensity 0/4</title></rect>
+<rect x="398" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-10-21: intensity 0/4</title></rect>
+<rect x="398" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-10-22: intensity 0/4</title></rect>
+<rect x="398" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-10-23: intensity 0/4</title></rect>
+<rect x="398" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-10-24: intensity 0/4</title></rect>
+<rect x="437" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-10-25: intensity 0/4</title></rect>
+<rect x="437" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-10-26: intensity 0/4</title></rect>
+<rect x="437" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-10-27: intensity 0/4</title></rect>
+<rect x="437" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-10-28: intensity 0/4</title></rect>
+<rect x="437" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-10-29: intensity 0/4</title></rect>
+<rect x="437" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-10-30: intensity 0/4</title></rect>
+<rect x="437" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-10-31: intensity 0/4</title></rect>
+<text x="476" y="90" fill="#A7B3C8" font-size="11">NOV</text>
+<rect x="476" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-11-01: intensity 0/4</title></rect>
+<rect x="476" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-11-02: intensity 0/4</title></rect>
+<rect x="476" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-11-03: intensity 0/4</title></rect>
+<rect x="476" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-11-04: intensity 0/4</title></rect>
+<rect x="476" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-11-05: intensity 0/4</title></rect>
+<rect x="476" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-11-06: intensity 0/4</title></rect>
+<rect x="476" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-11-07: intensity 0/4</title></rect>
+<rect x="515" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-11-08: intensity 0/4</title></rect>
+<rect x="515" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-11-09: intensity 0/4</title></rect>
+<rect x="515" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-11-10: intensity 0/4</title></rect>
+<rect x="515" y="170" width="28" height="16" rx="3" fill="#172237"><title>2026-11-11: intensity 0/4</title></rect>
+<rect x="515" y="192" width="28" height="16" rx="3" fill="#172237"><title>2026-11-12: intensity 0/4</title></rect>
+<rect x="515" y="214" width="28" height="16" rx="3" fill="#172237"><title>2026-11-13: intensity 0/4</title></rect>
+<rect x="515" y="236" width="28" height="16" rx="3" fill="#172237"><title>2026-11-14: intensity 0/4</title></rect>
+<rect x="554" y="104" width="28" height="16" rx="3" fill="#172237"><title>2026-11-15: intensity 0/4</title></rect>
+<rect x="554" y="126" width="28" height="16" rx="3" fill="#172237"><title>2026-11-16: intensity 0/4</title></rect>
+<rect x="554" y="148" width="28" height="16" rx="3" fill="#172237"><title>2026-11-17: intensity 0/4</title></rect>
+<rect x="554" y="170" width="28" height="16" rx="3" fill="#343B78"><title>2026-11-18: intensity 1/4</title></rect>
+<text x="32" y="305" fill="#A7B3C8" font-size="11">THROUGH 2026-11-18 · 13 WEEKS</text>
+<text x="405" y="305" fill="#A7B3C8" font-size="10">LESS</text>
+<rect x="443" y="295" width="16" height="12" rx="2" fill="#172237"/>
+<rect x="465" y="295" width="16" height="12" rx="2" fill="#343B78"/>
+<rect x="487" y="295" width="16" height="12" rx="2" fill="#545AC2"/>
+<rect x="509" y="295" width="16" height="12" rx="2" fill="#8583EA"/>
+<rect x="531" y="295" width="16" height="12" rx="2" fill="#B1ADF9"/>
+<text x="560" y="305" fill="#A7B3C8" font-size="10">MORE</text></g></svg>
