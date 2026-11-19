@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title desc">
-  <title id="title">Backend category</title>
-  <desc id="desc">Original engineering category pictogram.</desc>
-  <defs></defs>
-  <g font-family="Segoe UI, Arial, sans-serif"><rect x="0.5" y="0.5" width="47" height="47" rx="12" fill="#111827" stroke="#384367"/><g fill="none" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="13" y="12" width="22" height="10" rx="2"/><rect x="13" y="26" width="22" height="10" rx="2"/><path d="M18 17h8m-8 14h8"/><circle cx="31" cy="17" r="0.8"/><circle cx="31" cy="31" r="0.8"/></g></g>
-</svg>

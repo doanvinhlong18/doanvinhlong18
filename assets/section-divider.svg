@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="30" viewBox="0 0 1200 30" role="img" aria-labelledby="title desc">
-  <title id="title">Section divider</title>
-  <desc id="desc">Decorative indigo to cyan hairline.</desc>
-  <defs><linearGradient id="divider"><stop stop-color="#6366F1" stop-opacity="0"/><stop offset="0.3" stop-color="#6366F1" stop-opacity="0.5"/><stop offset="0.7" stop-color="#06B6D4" stop-opacity="0.35"/><stop offset="1" stop-color="#06B6D4" stop-opacity="0"/></linearGradient></defs>
-  <g font-family="Segoe UI, Arial, sans-serif"><path d="M0 15h1200" stroke="url(#divider)"/></g>
-</svg>

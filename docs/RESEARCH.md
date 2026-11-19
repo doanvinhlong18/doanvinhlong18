@@ -1,10 +1,20 @@
 # Public-source research
 
-Inspected on **2026-11-19**. The owner later clarified that no repository should dominate the profile; the final design gives the projects equal, compact treatment.
+Inspected on **2026-11-19**. The owner clarified that no repository should dominate the profile, then requested a redesign based on `D:\Work\metrics` and [lowlighter](https://github.com/lowlighter). The final design uses two compact infographic columns and gives the four repository links equal weight.
+
+## Redesign reference and refreshed data
+
+The actual lowlighter profile README was fetched from `lowlighter/lowlighter`. It uses narrow left/right infographic images sourced from a gist, with a full-width one-pixel spacer to clear the columns. Its general infographic includes an isometric calendar and language breakdown. Personal music, achievements, sponsorships, and identity were not reused.
+
+The local Metrics source was inspected at `366f8b9dfe3a59656c67d5dcad9950f59c9bc96d`, and that revision was verified against the public `lowlighter/metrics` GitHub API. The Classic renderer, isocalendar projection, language options, action inputs, output directory, and PAT requirements were read. The repository was not modified. The shared Metrics endpoint returned HTTP 500 during inspection, so the README references checked-in local images instead of relying on the shared instance.
+
+The latest public repository list now contains **18** entries, including `doanvinhlong18/doanvinhlong18`. The account's profile repository was created after the initial discovery below. The current asset snapshot contains actual language-byte responses per public repository and contribution counts joined from GitHub's calendar tooltips, with the fetch timestamp and displayed date range. This supersedes the old intensity-only activity asset.
+
+The native Metrics action is configured, but an authenticated run requires a `METRICS_TOKEN` repository secret and has not been performed locally. The checked-in bootstrap infographic uses independently fetched public data and an explicitly documented local renderer.
 
 ## Discovery
 
-The [public account API](https://api.github.com/users/doanvinhlong18) returned 17 public repositories. The public profile had no name, biography, email, website, or LinkedIn to verify. The identity and experience in the README come from the owner's supplied brief. The [public repository list](https://api.github.com/users/doanvinhlong18/repos?per_page=100) did not include the special profile repository. This does not determine whether a private repository exists.
+At the initial inspection, the [public account API](https://api.github.com/users/doanvinhlong18) returned 17 public repositories. The public profile had no name, biography, email, website, or LinkedIn to verify. The identity and experience in the README come from the owner's supplied brief. The [public repository list](https://api.github.com/users/doanvinhlong18/repos?per_page=100) did not then include the special profile repository. See the refreshed discovery above for the current state.
 
 Seven repository trees were inspected: ShopCore, RAG-NEWS, RecommenderSystem, BigData, QuanLyNhaTroBE, BE-HQTCSDL, and BE-HQTCSDL-MYSQL. README files were read where present; manifests and selected implementation files were checked. No project was built or deployed as part of this profile task. Source inspection supports implementation descriptions, not operational guarantees.
 
@@ -35,7 +45,7 @@ The additional rental-management repositories contain Java / Spring Data JPA man
 
 ## Activity source
 
-[GitHub's public contribution page](https://github.com/users/doanvinhlong18/contributions) was reachable with HTTP 200. The local activity assets use only the page's date and intensity attributes. They are a dated snapshot, not a fabricated calendar or a measurement of engineering ability. The initial snapshot is generated separately after the asset build.
+[GitHub's public contribution page](https://github.com/users/doanvinhlong18/contributions) was reachable with HTTP 200. The current metrics snapshot uses dates, intensity levels, and actual count tooltips. These are contribution counts, not an assertion that every contribution is a commit. The calendar is a dated snapshot, not a measurement of engineering ability.
 
 ## Missing information
 

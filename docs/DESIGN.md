@@ -1,62 +1,55 @@
-# Design and maintenance
+# A Metrics-style engineering profile
 
-The profile is an engineering identity first. Four projects have equal weight in one compact table; no repository is positioned as a flagship. This follows the owner's clarification that the overall interface and visual harmony matter more than highlighting a particular repository.
+The reference is [lowlighter's actual profile](https://github.com/lowlighter), with its narrow infographic columns and isometric contribution calendar. The local source at `D:\Work\metrics` was inspected at revision `366f8b9dfe3a59656c67d5dcad9950f59c9bc96d`, especially the Classic template, isocalendar plugin, language plugin, and action configuration. The reference repository was read only.
 
-## Visual system
+The redesign replaces the large cinematic hero and long portfolio sections with a compact nameplate, two balanced infographic columns, one row of project links, and an expandable text profile. Each public repository has equal weight. The interface takes its rhythm from lowlighter; the biography, colors, public data, and engineering content belong to Doan Vinh Long.
 
-| Token | Value | Purpose |
-| --- | --- | --- |
-| Background | `#080B14` | Hero and image panels |
-| Surface | `#111827` | Raised planes and glass-like layers |
-| Primary | `#6366F1` | Infrastructure edges and identity accent |
-| Secondary | `#06B6D4` | Connections and data flow |
-| Accent | `#A78BFA` | Small highlights |
-| Text | `#E5E7EB` | Primary image text |
-| Muted | `#A7B3C8` | Supporting image text |
+## Layout
 
-The hero uses hand-built isometric vector geometry: server towers, suspended database cylinders, service nodes, and routed connections. Gradients simulate material and lighting; this is an isometric SVG illustration, **not a true 3D render**. Image generation was unavailable, so there are no generated raster assets or image API dependencies.
+- `profile-header.svg` is a restrained identity strip. Its mobile counterpart recomposes the same identity for a narrow screen.
+- `metrics/github.svg` contains public-repository context, a 26-week isometric contribution landscape, and a programming-language distribution.
+- `metrics/engineering.svg` contains the backend identity, four engineering interests, learning areas, and principles.
+- The two infographic images float left/right at 390px, matching the pattern in lowlighter's README. At narrow widths, GitHub's image max-width rule shrinks each image to the available width and they wrap onto successive rows. The transparent 1px spacer clears both columns before the following native text.
+- The introduction, project links, contact, and expandable engineering profile remain native Markdown / supported HTML. The complete engineering content remains available if an image fails.
 
-Native Markdown carries the biography, toolkit, project details, and principles. This keeps important information selectable, accessible, and readable in GitHub's light and dark themes. The illustration panels keep their own dark background in either theme. Native GitHub tables supply the four focus cards, wrapping their text at narrow widths.
+The images have a fixed dark surface in both GitHub themes. This avoids depending on the operating system's color-scheme setting to match GitHub's independently selected theme. Native text follows GitHub's selected theme.
 
-Typography inside images uses a local system stack (`Segoe UI`, Arial, sans-serif), with monospace for small labels. No remote fonts, tracking pixels, badge services, or remote image dependencies are used. All marks in `assets/icons/` are original category pictograms, not third-party brand logos.
+## Visual tokens
 
-## Responsive behavior and motion
+| Token | Value |
+| --- | --- |
+| Background | `#0D1117` |
+| Surface | `#101722` |
+| Border | `#28364A` |
+| Text | `#E6EDF3` |
+| Supporting text | `#9BAEC4` |
+| Blue | `#79B8FF` |
+| Purple | `#B4A2FF` |
+| Cyan | `#56D4DD` |
 
-The hero, principles, activity panel, and signature use `<picture>` with a mobile source at 600px. GitHub supports this image pattern; all content has a regular `<img>` fallback. Mobile artwork is recomposed rather than shrinking the desktop canvas. Native text provides the complete content if images are unavailable.
+The typography uses Segoe UI / Arial with a monospace identity label. Small line icons, fine dividers, limited color, and consistent spacing replace badge walls and large decorations. The isometric calendar provides depth without needing a raster image or real-time 3D. It is vector geometry, not a rendered WebGL scene. No animation is used.
 
-`hero.svg` and `hero-mobile.svg` are static by design. The separate `hero-animated.svg` adds restrained data-flow motion, floating geometry, and gradient movement, with a `prefers-reduced-motion` rule. It is an optional enhancement and is **not embedded in the README**: GitHub's image proxy, browser, and reduced-motion behavior can differ. The checked-in static hero remains the default and fallback. Neither version contains scripts, external references, `foreignObject`, WebGL, or interactive HTML.
+## Data and two rendering paths
 
-## Regenerate artwork
+The checked-in overview is rendered locally by `scripts/render_profile.py` using real public data from `assets/metrics-data.json`. This is a custom bootstrap renderer, **not a claim that the native Metrics engine has already run**. The isometric projection is adapted from the MIT-licensed isocalendar source; the license and attribution are in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
 
-Python 3.10+ is sufficient; the build and activity scripts use only the standard library.
+`refresh_metrics.py` gets the public repository list, each repository's actual GitHub language-byte totals, and GitHub's public contribution calendar. It joins each calendar cell to its actual count tooltip; it never estimates counts from intensity levels. The height of an isometric column is proportional to its source count relative to the largest displayed day. Empty days remain low floor tiles. Only a complete, validated fetch is written. A failed fetch keeps the previous snapshot.
+
+Language percentages use bytes in owned, non-fork public repositories. The included denominator excludes Jupyter Notebook, HTML, CSS, SCSS, Less, Jinja, Dockerfile, Batchfile, and Handlebars. The five largest remaining languages are shown separately, with the rest grouped as Other. This exclusion is disclosed in the image and README. Bytes are not time spent, authorship, professional proficiency, or a career ranking.
+
+The optional native `lowlighter/metrics` step is already wired into the workflow. With `METRICS_TOKEN` configured, it generates the left infographic using Classic + isocalendar + languages at the pinned revision. Its output is validated before replacing the bootstrap file. On failure, the freshly generated public-data version remains. The right infographic and responsive header stay consistent. The native engine may show a slightly different date window or grouping because its aggregation algorithm differs from the bootstrap renderer.
+
+The native Classic renderer uses a self-contained SVG `foreignObject` with embedded XHTML/CSS. This is the format used by lowlighter's public profile; it is not arbitrary HTML in the README. Verification allows this format only for `assets/metrics/github.svg`, rejects scripts and remote image/font references, and retains the simple local renderer as a fallback. The other assets contain plain SVG geometry and text.
+
+## Maintenance
 
 ```powershell
-python scripts/build_assets.py
-python scripts/refresh_activity.py
-python scripts/verify_profile.py
-python scripts/verify_profile.py --online
+python scripts/build_assets.py              # offline rebuild from saved data
+python scripts/refresh_metrics.py           # read-only public-data fetch + rebuild
+python scripts/verify_profile.py            # local validation
+python scripts/verify_profile.py --online   # additionally check public URLs
 ```
 
-`build_assets.py` is the editable source for the hero, category icons, principles, dividers, and signature. It does not fetch data or change the README. The optional animated hero is generated from the same geometry.
+These scripts use only Python's standard library. No Node packages, Docker, API key, or Metrics checkout is required for the local bootstrap profile. Docker and a scopeless GitHub personal access token are used only by the optional native Metrics action on GitHub's Ubuntu runner.
 
-`refresh_activity.py` fetches GitHub's public contribution HTML and stores only dates and intensity levels in `assets/activity-data.json`. It does not infer commit counts, contribution totals, streaks, or proficiency. A failed fetch or unexpected source format leaves the existing assets untouched. The snapshot explicitly shows its fetch date and source date range. Mobile uses the latest 13 weeks; desktop uses 26 weeks. Source parsing is a dependency on GitHub's HTML markup and may need maintenance if GitHub changes it.
-
-The `refresh-activity.yml` workflow runs weekly and on manual dispatch. Its checkout action is pinned to a verified commit. It updates only the three activity assets on the repository's default branch, with job-scoped `contents: write`. It does not deploy or change repository visibility. Protected branches may reject its push; in that case run the script locally and submit the changes through a pull request. GitHub can disable scheduled workflows in inactive public repositories; manual dispatch and the checked-in snapshot still work.
-
-To use the optional animation outside the README, reference `assets/hero-animated.svg` directly. If experimenting with it in the README, retain `hero.svg` and `hero-mobile.svg` as static alternatives and verify the actual GitHub rendering before keeping the change.
-
-## Content integrity
-
-The name, job title, 2+ years of experience, enterprise application background, and stated interests come from the owner's brief. They are self-reported, not independently verified by repository history. Public code supports the project descriptions. It does not establish employment, production deployments, user counts, or seniority.
-
-Spring Data JPA includes Hibernate as its usual ORM provider; the profile makes no separate expert-level Hibernate claim. SQL Server is supported by the rental-management Java repositories. Redis and RabbitMQ are explicitly classified as configured foundations in ShopCore. gRPC is a versioned contract in that project, not a completed order-to-product business flow. Elasticsearch, entity matching, and additional Micrometer instrumentation remain learning topics. Prometheus and regression tests are supported by BigData's implementation.
-
-No verified public email or LinkedIn was available. Do not add either without the owner's information. See [RESEARCH.md](RESEARCH.md) for the source evidence and limits.
-
-## Verification performed
-
-On 2026-11-19, all 14 SVGs parsed successfully and all 14 README image references resolved locally. The four project links, profile link, and official contribution endpoint returned HTTP 200. GitHub's GFM rendering API returned HTTP 200 and retained all four `<picture>` elements, all four focus-card headings, and the Markdown tables.
-
-Chromium previews at 1440px and 375px were inspected in light and dark themes. No images were broken and the page had no horizontal overflow in the local preview. All four mobile image sources were selected at 375px. SVG text bounding boxes remained within their canvases. The optional animated hero had zero running CSS animations under reduced motion.
-
-Simulated network failure and unexpected contribution-page markup both failed without changing the existing activity assets. Workflow YAML, trigger names, scoped write permissions, and authored-file whitespace were checked. These are local and API-rendering checks; the final appearance on the published GitHub profile still requires the owner review in [SETUP.md](SETUP.md).
+The account's name, 2+ years of experience, and enterprise background remain owner-provided. Repository data does not independently establish employment or production deployment. No email, LinkedIn, external achievements, sponsors, private-repository details, or personal data from lowlighter were invented or copied.
