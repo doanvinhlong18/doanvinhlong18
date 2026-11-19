@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-labelledby="title desc">
-  <title id="title">Distributed category</title>
-  <desc id="desc">Original engineering category pictogram.</desc>
-  <defs></defs>
-  <g font-family="Segoe UI, Arial, sans-serif"><rect x="0.5" y="0.5" width="47" height="47" rx="12" fill="#111827" stroke="#384367"/><g fill="none" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 17v8m-10 7 10-7 10 7"/><rect x="18" y="8" width="12" height="9" rx="2"/><rect x="8" y="32" width="12" height="9" rx="2"/><rect x="28" y="32" width="12" height="9" rx="2"/></g></g>
-</svg>
